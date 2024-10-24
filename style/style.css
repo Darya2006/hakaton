@@ -1,0 +1,625 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2CC295;
+  padding-top: 24px;
+}
+
+button,
+.button {
+  display: flex;
+  justify-content: center;
+  width: 211px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hover {
+  color: black;
+  background-color: #2CC295;
+  border: 2px solid black;
+}
+.hover:hover {
+  color: white;
+  background-color: black;
+}
+
+.account {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+.account a {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: inline-flex;
+  gap: 24px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li .active {
+  font-weight: 700;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 4px;
+}
+
+.header {
+  max-width: 1600px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  position: fixed;
+  background-color: rgba(44, 194, 149, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: -1;
+  max-height: 92px;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  padding: 20px 40px;
+}
+
+p {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 1px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+main .Banner {
+  height: 100vh;
+}
+main .Banner .BannerBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 160px;
+  gap: 60px;
+  max-width: 860px;
+  z-index: 2;
+  width: 100%;
+}
+main .Banner .BannerBlock .banner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+main .Banner .BannerBlock .banner span {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 4px;
+}
+main .Banner .BannerBlock .buttons {
+  display: inline-flex;
+  gap: 60px;
+}
+main .Banner .messange {
+  cursor: pointer;
+  position: fixed;
+  z-index: 15;
+  bottom: 40px;
+  right: 129px;
+}
+main .Banner .mess {
+  position: fixed;
+  z-index: 10;
+  right: 280px;
+  bottom: 40px;
+  z-index: 20;
+}
+main .Banner .hidden {
+  display: none;
+}
+main .right img {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 0px;
+}
+main .Advantages {
+  padding-top: 140px;
+  z-index: 10;
+}
+main .Advantages .AdvantagesBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 80px;
+}
+main .Advantages .AdvantagesBlock .advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+main .Advantages .AdvantagesBlock .advantages .items {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main .Advantages .AdvantagesBlock .advantages .item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  max-width: 755px;
+  width: 100%;
+  padding: 16px;
+  gap: 24px;
+  background-color: rgba(137, 215, 202, 0.4);
+}
+main .Advantages .AdvantagesBlock .advantages .item p {
+  font-size: 32px;
+}
+main .Advantages .AdvantagesBlock .advantages .item span {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+main .Account {
+  padding: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .Account .accauntBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+main .Account .accauntBlock .chapter {
+  font-size: 48px;
+  font-weight: 600;
+}
+main .Account .accauntBlock .profile {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  max-width: 1160px;
+  width: 100%;
+}
+main .Account .accauntBlock .profile .account {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+main .Account .accauntBlock .profile .account img {
+  width: 80px;
+  height: 80px;
+}
+main .Account .accauntBlock .profile .account a {
+  font-size: 48px;
+  font-weight: 600;
+  color: black;
+}
+main .Account .accauntBlock .profile button {
+  background-color: #89D7CA;
+  border-radius: 16px;
+  max-width: 493px;
+  width: 100%;
+  font-size: 24px;
+  padding: 20px;
+  font-weight: 600;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+main .Account .accauntBlock .editProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1564px;
+  width: 100%;
+  background-color: #89D7CA;
+  padding: 28px;
+  border-radius: 16px 16px 0px 0px;
+}
+main .Account .accauntBlock .editProfile .clientele {
+  height: 159px;
+}
+main .Account .accauntBlock .editProfile .item {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .Account .accauntBlock .editProfile .item .full {
+  max-width: 573px;
+}
+main .Account .accauntBlock .editProfile .item span {
+  font-size: 24px;
+  max-width: 478px;
+  width: 100%;
+}
+main .Account .accauntBlock .editProfile .item .name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+}
+main .Account .accauntBlock .editProfile .item .name span {
+  font-size: 32px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+main .Account .accauntBlock .editProfile .item .name p {
+  font-size: 40px;
+  font-weight: 700;
+}
+main .Account .accauntBlock .editProfile .item .name img {
+  width: 100px;
+  height: 100px;
+}
+main .Account .accauntBlock .editProfile .item .mes {
+  max-width: none;
+}
+main .Account .accauntBlock .editProfile .item .norm {
+  background-color: #FFA500;
+}
+main .Account .accauntBlock .editProfile .item .bad {
+  background-color: #FF0000;
+}
+main .Account .accauntBlock .editProfile .item button {
+  background-color: #2CC295;
+  border-radius: 8px;
+  max-width: 223px;
+  padding: 14px 55px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #022322;
+  padding: 20px;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1600px;
+  width: 100%;
+}
+footer nav {
+  padding: 16px 0px;
+}
+footer nav ul {
+  display: inline-flex;
+  gap: 24px;
+}
+footer nav ul li {
+  list-style: none;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: #AACCC5;
+}
+footer .line {
+  background-color: #04614C;
+  height: 1px;
+}
+footer .bottom {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .bottom .copyraiting {
+  color: #AACCC5;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 4px;
+}
+footer .bottom .icons {
+  display: inline-flex;
+  gap: 36px;
+}
+footer .bottom .icons img {
+  height: 23px;
+}
+
+.modaloverlay {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.modaloverlay:target {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 99999;
+}
+.modaloverlay .request {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 54px;
+  max-width: 1210px;
+  max-height: 514px;
+  border-radius: 0px;
+  position: absolute;
+  padding: 52px 30px;
+  bottom: 0px;
+}
+.modaloverlay .request .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.modaloverlay .request .form button a {
+  color: white;
+}
+.modaloverlay .request .input-box input::-moz-placeholder {
+  padding: 22px 24px;
+}
+.modaloverlay .request .input-box input::placeholder {
+  padding: 22px 24px;
+}
+.modaloverlay .request button {
+  font-size: 16px;
+}
+.modaloverlay .request .title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.modaloverlay .request .title p {
+  font-weight: 400;
+}
+.modaloverlay .log {
+  max-height: 518px;
+  max-width: 457px;
+  border-radius: 30px;
+  margin: 5% auto;
+  position: relative;
+}
+.modaloverlay .reg {
+  max-height: 700px;
+  max-width: 457px;
+  border-radius: 30px;
+  margin: 5% auto;
+  position: relative;
+}
+.modaloverlay .modal {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.modaloverlay .modal > iframe, .modaloverlay .modal > div {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.modaloverlay .close {
+  color: #808080;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.input-box {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #EAF5F2;
+  margin: 12px 0;
+  position: relative;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding-right: 28px;
+}
+.input-box input:focus ~ label, .input-box input:valid ~ label {
+  top: -5px;
+  color: #2CC295;
+  font-size: 14px;
+}
+.input-box .icon {
+  position: absolute;
+  top: 13px;
+  right: -100px;
+  font-size: 19px;
+  padding: 0px 16px;
+}
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0px 16px;
+  color: #808080;
+  transition: 0.3s ease;
+}
+
+.formbox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 74px 0;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+}
+.formbox form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 273px;
+  width: 100%;
+}
+.formbox.login {
+  max-height: 518px;
+  height: 100%;
+}
+.formbox h2 {
+  align-items: center;
+  font-size: 35px;
+}
+.formbox .remmeber-password {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+.formbox .remmeber-password label {
+  font-size: 14px;
+}
+.formbox .remmeber-password label input {
+  accent-color: #2CC295;
+  margin-right: 3px;
+}
+.formbox .remmeber-password a {
+  color: #808080;
+  font-weight: 600;
+  text-decoration: none;
+}
+.formbox .remmeber-password a:hover {
+  color: #2CC295;
+  text-decoration: none;
+}
+.formbox .button {
+  max-width: none;
+  width: 100%;
+  font-size: 14px;
+}
+.formbox .button a {
+  font-size: 14px;
+}
+.formbox .line {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+}
+.formbox span {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+.formbox .hover {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  border: 1px solid black;
+  background-color: white;
+}
+.formbox .hover a {
+  color: black;
+}
+.formbox .hover:hover {
+  background-color: black;
+}
+.formbox .hover:hover a {
+  color: white;
+}
+.formbox .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 8px;
+}
+.formbox .title .sub-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.formbox .title .question {
+  font-size: 12px;
+}
+.formbox .title .create-account {
+  font-size: 14px;
+  text-align: center;
+}
+.formbox .title .create-account a {
+  color: #04614C;
+  font-weight: 600;
+  text-decoration: none;
+}
+.formbox .title .create-account a:hover {
+  color: #2CC295;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

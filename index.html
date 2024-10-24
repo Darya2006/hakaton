@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header"></div>
+        <nav>
+            <ul>
+                <li><a href="#Advantages">Преимущества</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="#Modal" class="cta"><button>Войти</button></a>
+    </header>
+    <main>
+        <section class="Banner">
+            <div class="BannerBlock">
+                <div class="banner">
+                    <p>Создание индивидуальных
+                        CRM&ERP систем </p>
+                    <span>
+                        Занимаемся проектированием и разработкой WEB CRM систем, создание web приложений и программ для нашей компании одно из приоритетных направлений. В разработке используем PHP, MYSQL, AJAX, JQUERY, JS, CSS, HTML, CI3. Эффективное решение для автоматизации крупного и среднего бизнеса на современной платформе.
+                    </span>
+                </div>
+                <div class="buttons">
+                    <a href="#request"><button class="hover">Подать запрос</button></a>
+                    <button class="hover">Узнать больше</button>
+                </div>
+            </div>
+        </section>
+        <section class="Advantages" id="Advantages">
+            <div class="AdvantagesBlock">
+                <p>Почему мы?</p>
+                <div class="advantages">
+                    <div class="items">
+                        <div class="item">
+                            <p>Гибкость и адаптивность</p>
+                            <span>Индивидуальные решения позволяют компаниям адаптировать систему под свои уникальные бизнес-процессы. Это означает, что функционал может быть настроен в соответствии с конкретными требованиями, что значительно повышает эффективность работы.</span>
+                        </div>
+                        <div class="item">
+                            <p>Гибкость и адаптивность</p>
+                            <span>Индивидуальные решения позволяют компаниям адаптировать систему под свои уникальные бизнес-процессы. Это означает, что функционал может быть настроен в соответствии с конкретными требованиями, что значительно повышает эффективность работы.</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Гибкость и адаптивность</p>
+                        <span>Индивидуальные решения позволяют компаниям адаптировать систему под свои уникальные бизнес-процессы. Это означает, что функционал может быть настроен в соответствии с конкретными требованиями, что значительно повышает эффективность работы.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="right">
+            <img src="./image/Frame 54.png" alt="">
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <nav>
+                <ul>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="line"></div>
+            <div class="bottom">
+                <div class="copyraiting">
+                    <span>©2024</span><br>
+                    <span>Sam1rayAndArtem.INC</span>
+                </div>
+                <div class="icons">
+                    <img src="./image/Path.png" alt="">
+                    <img src="./image/Instagram Copy 3.png" alt="">
+                    <img src="./image/Shape.png" alt="">
+                    <img src="./image/Instagram Copy 2.png" alt="">
+                    <img src="./image/Instagram.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="Modal" class="modaloverlay">
+      <div class="modal log">
+        <a href="#close" class="close">&times;</a>
+        <div class="login-section">
+            <div class="formbox login">
+                <form id="loginForm">
+                    <div class="title">
+                        <div class="sub-title">ВХОД</div>
+                        <div class="question">У вас нет аккаунта?</div>
+                        <div class="create-account"><a href="#reg">Зарегистрируйтесь</a></div>
+                    </div>
+                    <div class="inputs">
+                        <div class="input-box">
+                            <input type="text" id="email" required>
+                            <label>Email</label>
+                            <span class="icon">
+                                <img src="./image/Group 1265.svg" alt="" width="8px" height="11px">
+                            </span>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <img src="./image/Vector.svg" alt="" width="12px" height="8px">
+                            </span>
+                            <input type="password" id="password" required>
+                            <label>Password</label>
+                        </div>
+                    </div>
+                    <div class="remember-password">
+                        <label>
+                          <input type="checkbox">Запомнить меня
+                        </label>
+                    </div>
+                    <a href="#" id="loginBtn" class="button">ВОЙТИ</a>
+                    <div class="line"></div>
+                    <span>Забыли пароль?</span>
+                    <button class="hover">
+                        <img src="./image/flat-color-icons_google.png" alt="">
+                        <a href="">Продолжить с Google</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="reg" class="modaloverlay">
+        <div class="modal reg">
+          <a href="#close" class="close">&times;</a>
+            <div class="login-section">          
+                <div class="formbox register">
+                    <form id="registerForm">
+                        <div class="title">
+                            <div class="sub-title">РЕГИСТРАЦИЯ</div>
+                            <div class="question">Уже есть аккаунт?</div>
+                            <div class="create-account"><a href="#Modal">Войти</a></div>
+                        </div>
+                        <div class="inputs">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <img src="./image/Group 1265.svg" alt="" width="8px" height="11px">
+                                </span>
+                                <input type="text" id="nametwo" required>
+                                <label for="nametwo" class="label">Имя</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <img src="./image/Group 1265.svg" alt="" width="8px" height="11px">
+                                </span>
+                                <input type="text" id="surname" required>
+                                <label for="surname" class="label">Фамилия</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <img src="./image/Group 1265.svg" alt="" width="8px" height="11px">
+                                </span>
+                                <input type="email" id="emailtwo" required>
+                                <label for="emailtwo" class="label">Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <img src="./image/Vector.svg" alt="" width="12px" height="8px">
+                                </span>
+                                <input type="password" id="passwordtwo" required>
+                                <label for="passwordtwo" class="label">Пароль</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <img src="./image/Vector.svg" alt="" width="12px" height="8px">
+                                </span>
+                                <input type="password" id="confirmPassword" required>
+                                <label for="confirmPassword" class="label">Подтвердите пароль</label>
+                            </div>
+                        </div>
+                        <div class="remember-password">
+                            <label>
+                              <input type="checkbox">Запомнить меня
+                            </label>
+                        </div>
+                        <a href="#" id="registerBtn" class="button">РЕГИСТРАЦИЯ</a>
+                        <div class="line"></div>
+                        <button class="hover" id="submitBtn">
+                            <img src="./image/flat-color-icons_google.png" alt="">
+                            <a href="">Продолжить с Google</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="request" class="modaloverlay">
+        <div class="modal request" id="box">
+        <a href="#close" class="close">&times;</a>
+            <div class="form">
+                <div class="input-box">
+                    <input type="text" id="text" required placeholder="Расскажите кратко о вашем проекте">
+                </div>
+                <div class="input-box">
+                    <input type="name" id="name" required placeholder="Ваше имя">
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder="Телефон" value="" />
+                    <input type="tel" placeholder="Телефон" value=""  style="display: none;"/>
+                </div>
+                <button><a href="">Отправить</a></button>
+            </div>
+            <div class="title">
+                <p>Давайте обсудим ваш проект!
+                </p>
+            </div>
+        </div>
+    </div>
+<script src="./script/script.js"></script>
+</body>
+</html>
